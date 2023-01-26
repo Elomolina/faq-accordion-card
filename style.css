@@ -14,7 +14,6 @@ body
     justify-content: center;
     align-items: center;
     background-color: hsl(273, 75%, 66%);
-    overflow: hidden;
 }
 .container 
 {
@@ -123,4 +122,38 @@ h4::after
 .activo h4 
 {
     color:brown;
+}
+@media(min-width:601px) and (max-width: 1000px)
+{   
+    .container 
+    {
+        width:600px;
+        height:800px;
+    }
+    .mujer 
+    {
+        width: 300px;
+        height:300px;
+        right:60px;
+    }
+    .caja 
+    {
+        display: none;
+    }
+}
+@media(max-width: 600px)
+{
+    .container 
+    {
+        width:500px;
+    }
+    .mujer 
+    {
+        width:200px;
+        height:200px;
+    }
+    .caja 
+    {
+        display: none;
+    }
 }
